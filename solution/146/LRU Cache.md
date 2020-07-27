@@ -1,5 +1,12 @@
 ## Solution
 ### Java
+**解题思路**
+<br/>
+1. 定义一个双向链表存储键值对信息
+2. 每次访问到一个结点的时候，将结点插入到表头
+3. 当链表的size超过capacity的时候，将链表末尾的结点删除
+4. 注意用一个HashMap存储key与结点的对应关系
+
 ```java
 class LRUCache {
     class DLinkedNode {
