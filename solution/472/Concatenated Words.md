@@ -1,5 +1,10 @@
 ## Solution
 ### Java
+**解题思路**
+<br/>
+1. 首先需要将words数组中的string根据长度进行由小到大的排序，每次在words靠后的word只能由前面的word组成
+2. 在判断当前word能不能由前面的preWords组成时，需要用到动态规划，具体看代码
+
 ```java
 class Solution {
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
